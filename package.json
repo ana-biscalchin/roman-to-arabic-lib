@@ -1,8 +1,7 @@
 {
   "name": "roman-to-arabic-lib-ab",
   "version": "1.0.0",
-  "description": "Esta biblioteca se destina à conversão de algarismos romanos para arábicos, para uso em aplicações web
-  ",
+  "description": "Converte de algarismos romanos para arábicos para uso em aplicações web",
   "main": "index.js",
   "scripts": {
     "test": "nyc mocha"
