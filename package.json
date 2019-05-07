@@ -1,23 +1,25 @@
 {
-  "name": "roman-to-arabic",
+  "name": "roman-to-arabic-lib-ab",
   "version": "1.0.0",
-  "description": "",
+  "description": "Esta biblioteca se destina à conversão de algarismos romanos para arábicos, para uso em aplicações web
+  ",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "nyc mocha"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ana-biscalchin/Roman-to-Arabic-numerals-converter.git"
+    "url": "git+https://github.com/ana-biscalchin/roman-to-arabic-lib.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/ana-biscalchin/Roman-to-Arabic-numerals-converter/issues"
+    "url": "https://github.com/ana-biscalchin/roman-to-arabic-lib/issues"
   },
-  "homepage": "https://github.com/ana-biscalchin/Roman-to-Arabic-numerals-converter#readme",
+  "homepage": "https://github.com/ana-biscalchin/roman-to-arabic-lib#readme",
   "dependencies": {
     "chai": "^4.2.0",
+    "eslint": "^5.16.0",
     "mocha": "^6.1.4",
     "nyc": "^14.1.0"
   },
