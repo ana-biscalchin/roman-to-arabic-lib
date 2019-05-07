@@ -9,7 +9,7 @@ Na versão atual é capaz de converter números em algarismos romanos de 1 a 399
 
 ```shell
 
-$  npm install roman-to-arabic-lib
+$  npm install roman-to-arabic-lib-ab
 
 ```
 
@@ -17,9 +17,14 @@ $  npm install roman-to-arabic-lib
 
 ```node
 
-> const convert = require("./lib/index");
+> const convert = require("roman-to-arabic-lib-ab");
+
 > convert.intToRoman(101)> // returns "CI"
+>console.log(convert.intToRoman(20)) // returns "XX"
+
 > convert.romanToInt("CI") // returns "101"
+> console.log(convert.romanToInt("XX")) // returns "20"
+
 
 ```
 
