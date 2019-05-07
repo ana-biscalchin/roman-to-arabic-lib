@@ -1,7 +1,9 @@
 # Conversor de algarismos romanos para arábicos v.1
 
-**Esta biblioteca se destina à conversão de algarismos romanos para arábicos, para uso em aplicações web.**
-Na versão atual é capaz de converter números em algarismos romandos de 1 a 1999 para seus equivalentes em algarismos arábicos.
+**Esta biblioteca se destina à conversão de algarismos romanos para arábicos e de arábicos para romanos, para uso em aplicações web.**
+
+
+Na versão atual é capaz de converter números em algarismos romanos de 1 a 3999 para seus equivalentes em algarismos arábicos e também realiza a operação inversa.
 
 ## Como instalar:
 
