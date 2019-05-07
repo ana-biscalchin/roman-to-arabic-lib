@@ -1,31 +1,30 @@
 const chai = require('chai');
-const mocha = require('mocha');
-const convert = require('../lib/index');
 const expect = chai.expect;
+const convert = require('../lib/index');
 
 describe('convert', () => {
   
-  describe('#romanToInt', () => {
-    it('Deve retornar 9 quando o parâmetro for IX', () => {
-      expect(convert.romanToInt('IX')).to.be.equal(9);
+  describe('romanToInt', () => {
+    it('Should return 20 when parameter is XX', () => {
+      expect(convert.romanToInt('XX')).to.be.equal(20);
     });
-    it('Deve retornar um erro quando não houver parâmetro', () => {
+    it('Should return an error when there is no parameter', () => {
       expect(() => convert.romanToInt()).to.throw('Insira um algarismo romano.');
       expect(() => convert.romanToInt('')).to.throw('Insira um algarismo romano.');
       expect(() => convert.romanToInt(9)).to.throw('Insira um algarismo romano.');
     });
   });
 
-  describe('#intToRoman', () => {
-    it('Deve retornar IX quando o parâmetro for 9', () => {
+  describe('intToRoman', () => {
+    it('Should return XXI when parameter is 21', () => {
       expect(convert.intToRoman(9)).to.be.equal('IX');
     });
-    it('Deve retornar um erro quando não houver parâmetro', () => {
+    it('Should return an error when there is no parameter', () => {
       expect(() => convert.intToRoman()).to.throw('Insira um número decimal.');
       expect(() => convert.intToRoman('')).to.throw('Insira um número decimal.');
       expect(() => convert.intToRoman('IX')).to.throw('Insira um número decimal.');
     });
-    it('Deve retornar um erro quando o parâmetro for igual ou menor que 0', () => {
+    it('Must return an error when parameter is equal to or less than 0', () => {
       expect(() => convert.intToRoman(0)).to.throw('Insira um número maior que 0.');
       expect(() => convert.intToRoman(-3)).to.throw('Insira um número maior que 0.');
     });
